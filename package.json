@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
