@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Image from 'next/legacy/image'
 import { StarIcon } from '@heroicons/react/outline'
 
+import dynamic from 'next/dynamic'
+
+
 const MAX_RATING = 5
 const MIN_RATING = 1
 
@@ -31,7 +34,7 @@ function Product({id,title,price,description,category,image}) {
 
         <p className='absolute top-2 right-2 text-xs italic text-gray-100s'>{category}</p>
 
-        <Image src={image} height={200} width={200} layout=''></Image>
+        <Image src={image} height={200} width={200} objectFit='contain'></Image>
         <h4>{title}</h4>
 
         <div className='flex'>

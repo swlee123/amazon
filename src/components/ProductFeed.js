@@ -1,5 +1,11 @@
 import React from 'react'
-import Product from './Product';
+
+import dynamic from 'next/dynamic';
+
+const Product = dynamic(() => import("./Product"), {
+  ssr: false,
+});
+
 
 function ProductFeed({products}) {
   return (
