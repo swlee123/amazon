@@ -2,11 +2,6 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
-import dynamic from 'next/dynamic'
-
-const Table = dynamic(() => import("../components/ProductFeed"), {
-ssr: false,
-});
 
 
 export default function Home({products}) {
