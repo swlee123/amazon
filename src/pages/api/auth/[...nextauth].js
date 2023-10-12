@@ -17,6 +17,7 @@ export const authOptions = {
     })
     // ...add more providers here
   ],
+  secret:"K7zO7S/dtzDXjFwz6mYl3u5IyN8QoChDL1b8G6neiu0="
 }
 
 export default NextAuth(authOptions)
