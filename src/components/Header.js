@@ -46,7 +46,7 @@ function Header() {
                     
                 </div>
                 {/* orders */}
-                <div className="link">
+                <div onClick= {()=>router.push('/orders')}className="link">
                     <p>Returns</p>
                     <p className="text1">& Orders</p>
                 </div>
